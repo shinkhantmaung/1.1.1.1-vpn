@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Rock Wonder</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="{{ url_for('static',filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  
+  <link href="{{ url_for('static',filename='css/one-page-wonder.min.css') }}" rel="stylesheet">
+
+</head>
+<style>
+div#loading {
+    display: none;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    z-index: 15;
+    top: 50%;
+    left: 50%;
+    margin: -150px 0 0 -150px;
+    background: no-repeat center;
+    background-size: cover;
+    background-color: linear-gradient(0deg, #ee0979 0%, #ff6a00 100%);
+    cursor: wait;
+  }   
+</style>
+<body style="background-color: #2876f9;
+background-image: linear-gradient(315deg, #2876f9 0%, #6d17cb 74%);">
+  <img src="{{ url_for('static',filename='img/social.png') }}" style="display: none;" /> 
+  <div id="loading">
+    <img src="{{ url_for('static',filename='loadingimage.gif') }}" alt="loading" width="300">
+    <h6 class="text-center mb-0">This process may be take up to 2 -3 minutes</h6>
+  </div>
+  <div id="content" style="background-color: #fff;">
+  <header class="masthead text-center text-white" >
+    <div class="masthead-content">
+      <div class="container">
+        <h2 class="masthead-subheading mb-0">Will Rock Your Socks Off</h2>
+      </div>
+      <div class="container p-5">
+          <form action="/script_run" method="POST" id="form1">          
+            <div class="row align-items-center">
+              <div class="mb-3 mb-md-0 col-md-5">
+                <input type="text" name="userid" placeholder="Enter Your Warp++ ID" class="form-control" required>
+              </div>                  
+              <div class="mb-3 mb-md-0 col-md-3">
+                <select name="gb" class="custom-select form-control">
+                  <option value="1">1 GB</option>
+                  <option value="2">2 GB</option>
+                  <option value="3">3 GB</option>
+                </select>
+              </div>
+              <div class="mb-3 mb-md-0 col-md-4">
+                <input type="submit" value="GO!" onclick="loading();" class="btn btn-secondary btn-block">
+              </div>
+            </div>         
+          </form>        
+      </div>
+    </div>
+    <div class="bg-circle-1 bg-circle"></div>
+    <div class="bg-circle-2 bg-circle"></div>
+    <div class="bg-circle-3 bg-circle"></div>
+    <div class="bg-circle-4 bg-circle"></div>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 order-lg-2">
+          <div class="p-5">       
+            <img class="img-fluid" src="{{ url_for('static',filename='img/1.gif') }}"  alt="">
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <div class="p-5">
+            <h2 class="display-4">Step 1</h2>
+            <p>App Setting ထဲဝင်ပါ။ Advanced ကိုနှိပ်ပါ။  Diagnostics ကိုဝင်ပြီး ID ကို Copy လုပ်ပါ။</p><br>
+            <p>App Setting >> Advanced >> Diagnostics >> ID</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="p-5">
+            <img class="img-fluid" src="{{ url_for('static',filename='img/2.png') }}" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="p-5">
+            <h2 class="display-4">Step 2</h2>
+            <p>ကော်ပီကူးထားသော ID ကို "Enter Your Warpp+" တွင်ထည့်ပါ။ ပြီးလျှင် မိမိလိုအပ်သော GB ပမာဏအားရွေးချယ်ပြီး "GO!" ကိုနှိပ်ပါ။</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 order-lg-2">
+          <div class="p-5">
+            <img class="img-fluid" src="{{ url_for('static',filename='img/3.png') }}" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <div class="p-5">
+            <h2 class="display-4">Step 3</h2>
+            <p>ပြီးလျှင် ခဏစောင့်ဆိုင်းပါ။ မိမိရွေးချယ်လိုက်သော GB ပမာဏပေါ်မူတည်၍ ၂မိနစ်မှ ၅ မိနစ် ကြာမြင့်နိုင်ပါသည်။ ပြီးလျှင် မိမိဖုန်းထံ Notification ဝင်လာမည်ဖြစ်ပြီး App ထဲဝင်ပြီး ပြန်လှန်စစ်နိုင်ပါသည်။</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="py-5 bg-black">
+    <div class="container">
+      <p class="m-0 text-center text-white small">Developed by Horace Johnson </p>
+    </div>
+    <!-- /.container -->
+  </footer>
+  </div>
+  <!-- Bootstrap core JavaScript -->
+  <script src="{{ url_for('static',filename='vendor/jquery/jquery.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <script type="text/javascript">
+    function loading(){
+        document.getElementById('form1').submit();
+        $("#loading").show();
+        $("#content").hide();       
+    }
+    </script>
+</body>
+
+</html>

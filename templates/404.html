@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Rock Wonder</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="{{ url_for('static',filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="{{ url_for('static',filename='css/one-page-wonder.min.css') }}" rel="stylesheet">
+
+</head>
+<body>
+
+  <header class="masthead text-center text-white" style="background: #e63946; padding-top: calc(1rem + 72px);" >
+    <div class="masthead-content">
+      <div class="container">
+        <section class=" text-center text-white">
+            <div class="container">
+                <div class="text-left">
+                    <div class="row">
+                      <div class="col-md-3"></div>
+                        <div class="col-md-6">
+                            <h2>Oops! Disconnected</h2>
+                            <p>ချိတ်ဆက်နေစဉ် ပြတ်တောက်သွားပါသည်။ ကျေးဇူးပြု၍ ပြန်လည်ကြိုးစားကြည့်ပါ။</p>
+                            <div class="mt-5 mb-5">
+                                <li>ထည့်သွင်းထားသော Warp+ ID မှန်ကန်မှု မရှိခြင်းကြောင့် ဖြစ်နိုင်ပါသည်။</li>
+                                <li>အင်တာနက် ကော်နက်ရှင် / လိုင်းအခြေအနေကြောင့် ဖြစ်နိုင်ပါသည်။</li>
+                                <li>ချိတ်ဆက်ဆောင်ရွက်နေစဉ်အတွင်း တစ်ခုခုမှားယွင်းမှုကြောင့် ဖြစ်နိုင်ပါသည်။</li>
+                            </div>
+                            
+                            <!-- <button class="btn btn-dark btn-block p-2" type="button" href="/">Try Again</button> -->
+                            <input type="btn" class="btn btn-dark btn-block p-2" value="TRY AGAIN!" onclick="document.getElementById('btn').click()">
+                            <a id="btn" href="/"   hidden></a>
+                        </div> 
+                        <div class="col-md-3"></div>
+                    </div>          
+                </div>
+            </div>
+          </section>                 
+      </div>
+    </div>
+    <!-- <div class="bg-circle-1 bg-circle"></div>
+    <div class="bg-circle-2 bg-circle"></div>
+    <div class="bg-circle-3 bg-circle"></div>
+    <div class="bg-circle-4 bg-circle"></div> -->
+  </header>
+
+  <!-- Footer -->
+  <footer class="py-5 bg-black">
+    <div class="container">
+      <p class="m-0 text-center text-white small">Developed by Horace Johnson</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{{ url_for('static',filename='vendor/jquery/jquery.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+
+</body>
+
+</html>
