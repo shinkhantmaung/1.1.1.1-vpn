@@ -4,8 +4,6 @@ import datetime
 import random
 import string
 import time
-import sys
-import os
 from flask import Flask,render_template,redirect,url_for,request
 app = Flask(__name__)
 
@@ -66,9 +64,6 @@ def script_run():
     g = 0
     b = 0
     while True:
-      os.system('cls' if os.name == 'nt' else 'clear')
-      sys.stdout.write("\r[+] Sending request...   [□□□□□□□□□□] 0%")
-      sys.stdout.flush()
       result = run()
       if result == 200 and g != no_of_gb:
         g += 1
